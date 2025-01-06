@@ -32,9 +32,6 @@ const _layout = () => {
       <Tabs.Screen name='favoritos' options={{tabBarIcon:({color})=>{
         return <Ionicons name='bookmark' size={24} color={color}/>
       }}}/>
-      <Tabs.Screen name='perfil' options={{tabBarIcon:({color})=>{
-        return <FontAwesome name='user' size={24} color={color}/>
-      }}} />
     </Tabs>
   )
 }
@@ -43,7 +40,7 @@ export default _layout
 
 const styles = StyleSheet.create({
   icones:{
-    backgroundColor: Colors.primaryColor,
+    backgroundColor: Colors.Verde,
     width: 36,
     height: 32,
     margin: 'auto',
