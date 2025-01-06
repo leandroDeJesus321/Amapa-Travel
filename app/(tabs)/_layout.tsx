@@ -1,45 +1,54 @@
-import { Tabs } from 'expo-router';
-import React from 'react';
-import { Platform } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+import { Tabs } from 'expo-router'
+import { FontAwesome, Ionicons, MaterialIcons } from '@expo/vector-icons'
+import Colors from '@/constants/Colors'
 
-import { HapticTab } from '@/components/HapticTab';
-import { IconSymbol } from '@/components/ui/IconSymbol';
-import TabBarBackground from '@/components/ui/TabBarBackground';
-import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme';
-
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
+const _layout = () => {
   return (
-    <Tabs
-      screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        headerShown: false,
-        tabBarButton: HapticTab,
-        tabBarBackground: TabBarBackground,
-        tabBarStyle: Platform.select({
-          ios: {
-            // Use a transparent background on iOS to show the blur effect
-            position: 'absolute',
-          },
-          default: {},
-        }),
-      }}>
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
-        }}
-      />
-      <Tabs.Screen
-        name="explore"
-        options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
-        }}
-      />
+    <Tabs screenOptions={{
+      tabBarStyle:{
+        backgroundColor: Colors.bgColor,
+        borderTopWidth: 0,
+        shadowColor: 'white',
+        padding: 0,
+      },
+      tabBarShowLabel: false,
+      tabBarActiveTintColor: Colors.black,
+      tabBarInactiveTintColor: '#999', 
+    }}>
+      <Tabs.Screen name='index'
+      options={{tabBarIcon:({color})=>{
+        return <Ionicons name='compass' size={24} color={color}/>
+      }}}/>
+      <Tabs.Screen name='categoria'options={{tabBarIcon:({color})=>{
+        return <MaterialIcons name='space-dashboard' size={24} color={color}/>
+      }}}/>
+      <Tabs.Screen name='busca'options={{tabBarIcon:({color})=>{
+         return <View style={styles.icones}>
+          <Ionicons name='search-outline' size={24} color={Colors.white} />
+        </View>
+      }}}/>
+      <Tabs.Screen name='favoritos' options={{tabBarIcon:({color})=>{
+        return <Ionicons name='bookmark' size={24} color={color}/>
+      }}}/>
+      <Tabs.Screen name='perfil' options={{tabBarIcon:({color})=>{
+        return <FontAwesome name='user' size={24} color={color}/>
+      }}} />
     </Tabs>
-  );
+  )
 }
+
+export default _layout
+
+const styles = StyleSheet.create({
+  icones:{
+    backgroundColor: Colors.primaryColor,
+    width: 36,
+    height: 32,
+    margin: 'auto',
+    paddingVertical: 4,
+    paddingHorizontal: 6,
+    borderRadius: 6
+  }
+})

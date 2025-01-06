@@ -1,15 +1,15 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const index = () => {
+const perfil = () => {
   return (
     <View style={styles.container}>
-      <Text>index</Text>
+      <Text>perfil</Text>
     </View>
   )
 }
 
-export default index
+export default perfil
 
 const styles = StyleSheet.create({
     container:{

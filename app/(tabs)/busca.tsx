@@ -1,15 +1,15 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const index = () => {
+const busca = () => {
   return (
     <View style={styles.container}>
-      <Text>index</Text>
+      <Text>busca</Text>
     </View>
   )
 }
 
-export default index
+export default busca
 
 const styles = StyleSheet.create({
     container:{

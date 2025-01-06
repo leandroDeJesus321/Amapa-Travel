@@ -1,15 +1,15 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const index = () => {
+const categoria = () => {
   return (
     <View style={styles.container}>
-      <Text>index</Text>
+      <Text>categoria</Text>
     </View>
   )
 }
 
-export default index
+export default categoria
 
 const styles = StyleSheet.create({
     container:{
