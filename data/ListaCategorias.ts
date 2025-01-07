@@ -16,7 +16,7 @@ const categorias =[
         iconName: 'tree'
     },
     {
-        titulo: 'Montanha',
+        titulo: 'Montanhas',
         iconName: 'terrain'
     }
 ]

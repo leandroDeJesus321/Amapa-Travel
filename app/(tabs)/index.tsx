@@ -1,13 +1,22 @@
 import { StyleSheet, Text, TouchableOpacity, View, Image, TextInput } from 'react-native';
-import React from 'react';
+import React, { useState } from 'react';
 import { Stack } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import Colors from '@/constants/Colors';
 import {useHeaderHeight} from '@react-navigation/elements';
 import BotaoCategoria from '@/components/BotaoCategoria';
+import Listas from '@/components/Listas';
 
 const index = () => {
   const alturaTela = useHeaderHeight();
+
+  const [categoria, setCategoria] = useState('ALL')
+
+
+  const capturarMudancaCategoria = (categoria: string) =>{
+    console.log('Verificar se captura de categoria está funcionando: ', categoria);
+    setCategoria(categoria);
+  }
 
   return (
     <>
@@ -41,9 +50,9 @@ const index = () => {
         </TouchableOpacity>
       </View>
 
-      <BotaoCategoria
-        
-      />
+      <BotaoCategoria capturarMudancaCategoria={capturarMudancaCategoria}/>
+
+      <Listas/>
     </View>
   </>
   )
