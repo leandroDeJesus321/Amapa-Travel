@@ -1,5 +1,5 @@
 import { FlatList, Image, ListRenderItem, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { listaTipos } from '@/types/listaTipos'
 import { FontAwesome5, Ionicons } from '@expo/vector-icons'
 import Colors from '@/constants/Colors'
@@ -15,6 +15,17 @@ type Props = {
 
 const Listas = ({listings, category}: Props) => {
   const [carregando, setCarregando] = useState(false);
+
+  useEffect(()=>{
+    // console.log("Atualizando lista");
+    setCarregando(true);
+
+    setTimeout(()=>{
+      setCarregando(false);
+    }, 200);
+
+  }, [category])
+
   const carregarItens: ListRenderItem<listaTipos> = ({item}) =>{
     
     return (
@@ -50,7 +61,7 @@ const Listas = ({listings, category}: Props) => {
   return (
     <View>
       <FlatList
-        data={listings}
+        data={carregando ? [] : listings}
         renderItem={carregarItens}
         horizontal
         showsHorizontalScrollIndicator={false}

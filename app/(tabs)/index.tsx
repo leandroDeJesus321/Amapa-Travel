@@ -7,6 +7,7 @@ import {useHeaderHeight} from '@react-navigation/elements';
 import BotaoCategoria from '@/components/BotaoCategoria';
 import Listas from '@/components/Listas';
 import destinos from "../../data/destinos.json"
+import ListaGrupos from '@/components/ListaGrupos';
 
 const index = () => {
   const alturaTela = useHeaderHeight();
@@ -15,7 +16,7 @@ const index = () => {
 
 
   const capturarMudancaCategoria = (categoria: string) =>{
-    console.log('Verificar se captura de categoria está funcionando: ', categoria);
+    // console.log('Verificar se captura de categoria está funcionando: ', categoria);
     setCategoria(categoria);
   }
 
@@ -38,7 +39,7 @@ const index = () => {
     }}/>
     <View style={[styles.container, {paddingTop: alturaTela}]}>
       <Text style={styles.texto}>
-        Explore a beleza do Amapá
+        Explore as belezas do Amapá
       </Text>
       {/* Barra de pesquisa */}
       <View style={styles.containerPesquisa}>
@@ -53,7 +54,9 @@ const index = () => {
 
       <BotaoCategoria capturarMudancaCategoria={capturarMudancaCategoria}/>
 
-      <Listas listings={destinos}/>
+      <Listas listings={destinos} category={categoria}/>
+
+      <ListaGrupos/>
     </View>
   </>
   )

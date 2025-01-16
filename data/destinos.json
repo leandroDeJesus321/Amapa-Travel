@@ -25,7 +25,7 @@
         "preco": "",
         "local": "https://www.bing.com/search?q=Fortaleza+de+S%C3%A3o+Jos%C3%A9+macapa&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=fortaleza+de+s%C3%A3o+jos%C3%A9+maca&sc=9-26&sk=&cvid=686A1308CA264979BD4F6223D20BA5D2&ghsh=0&ghacc=0&ghpl=",
         "localidade": "Rua Cândido Mendes, Macapá, AP, 68905-670",
-        "categoria": "Ponto Turistico e Histórico",
+        "categoria": "Ponto Turistico",
         "historia": [
             {
                 "nome": "Meu Amapá na história",
@@ -46,7 +46,7 @@
         "preco": "",
         "local": "https://www.bing.com/maps?osid=985777c3-ecda-447b-845b-2e692c327f8e&cp=-0.057238~-51.157322&lvl=17&pi=0&imgid=7bda85fc-d42c-4058-9e65-62c0c89c5d94&v=2&sV=2&form=S00027",
         "localidade": "Rua D 28, 421, Santana, AP, 68926-106",
-        "categoria" : "Reserva Particular do Patrimônio Natural",
+        "categoria" : "Reserva Natural",
         "historia": [
             {
                 "nome": "Amapa Eco Camping",
@@ -68,7 +68,7 @@
         "preco": "",
         "local": "https://www.bing.com/maps?q=Oiapoque&FORM=HDRSC6&cp=3.225789%7E-52.216124&lvl=8.9",
         "localidade": "Rua Norberto Pennafort 540, Oiapoque, AP, 68980-000",
-        "categoria" : "Municipio do Amapá",
+        "categoria" : "Municipio",
         "historia": [
             {
                 "nome": "Site Oficial de Oiapoque",
@@ -90,7 +90,7 @@
         "preco": "",
         "local": "https://www.bing.com/maps?osid=d4acddea-39d0-44de-82a1-f53479917981&cp=0.029054~-51.078894&lvl=16&pi=0&imgid=b588bb3b-12d7-4720-ae07-90e2cfb3697d&v=2&sV=2&form=S00027",
         "localidade": "Avenida Feliciano Coelho, 1.509, 68901-025",
-        "categoria" : "Preservação cultura indígena, povos tradicionais e pesquisa científicas",
+        "categoria" : "Centro de Preservação cultura",
         "historia": [
             {
                 "nome": "Site oficial do Museu Sacaca",
