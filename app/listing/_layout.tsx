@@ -11,8 +11,7 @@ function RootLayout() {
   return (
       <>
       <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="listing" options={{ headerShown: false }} />
+        <Stack.Screen name="[id]" options={{ headerShown: false }} />
       </Stack>
       <StatusBar backgroundColor="#161622" style='Light'/>
       </>

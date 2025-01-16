@@ -6,6 +6,7 @@ import Colors from '@/constants/Colors';
 import {useHeaderHeight} from '@react-navigation/elements';
 import BotaoCategoria from '@/components/BotaoCategoria';
 import Listas from '@/components/Listas';
+import destinos from "../../data/destinos.json"
 
 const index = () => {
   const alturaTela = useHeaderHeight();
@@ -31,7 +32,7 @@ const index = () => {
       // Notificações
       headerRight: ()=>{
         return <TouchableOpacity onPress={() => { } } style={styles.notificacao}>
-          <Ionicons name='notifications' size={20} color={Colors.black} />
+          <Ionicons name='notifications' size={20} color={Colors.Preto} />
         </TouchableOpacity>
       }
     }}/>
@@ -46,13 +47,13 @@ const index = () => {
           <TextInput placeholder='Pesquisar...' style={{height: '100%', width: '100%'}}/>
         </View>
         <TouchableOpacity onPress={()=>{}} style={styles.filtroBtn}>
-            <Ionicons name="options" size={28} color={Colors.white}/>
+            <Ionicons name="options" size={28} color={Colors.Branco}/>
         </TouchableOpacity>
       </View>
 
       <BotaoCategoria capturarMudancaCategoria={capturarMudancaCategoria}/>
 
-      <Listas/>
+      <Listas listings={destinos}/>
     </View>
   </>
   )
@@ -69,12 +70,12 @@ const styles = StyleSheet.create({
     texto:{
       fontSize: 28,
       fontWeight:'800',
-      color: Colors.black,
+      color: Colors.Preto,
       marginTop: 10
     },
     notificacao:{
       marginRight: 20, 
-      backgroundColor: Colors.white, 
+      backgroundColor: Colors.Branco, 
       padding: 10, 
       borderRadius: 10,
       shadowColor: "#171717",
@@ -97,7 +98,7 @@ const styles = StyleSheet.create({
       gap:1,
       flexDirection: 'row',
       alignItems: 'center',
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.Branco,
     },
     filtroBtn:{
       backgroundColor: Colors.Verde,

@@ -14,7 +14,7 @@ const _layout = () => {
         padding: 0,
       },
       tabBarShowLabel: false,
-      tabBarActiveTintColor: Colors.black,
+      tabBarActiveTintColor: Colors.Preto,
       tabBarInactiveTintColor: '#999', 
     }}>
       <Tabs.Screen name='index'
@@ -26,7 +26,7 @@ const _layout = () => {
       }}}/>
       <Tabs.Screen name='busca'options={{tabBarIcon:({color})=>{
          return <View style={styles.icones}>
-          <Ionicons name='search-outline' size={24} color={Colors.white} />
+          <Ionicons name='search-outline' size={24} color={Colors.Branco} />
         </View>
       }}}/>
       <Tabs.Screen name='favoritos' options={{tabBarIcon:({color})=>{

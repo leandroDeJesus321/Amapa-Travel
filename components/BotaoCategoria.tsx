@@ -47,7 +47,7 @@ const BotaoCategoria = ({capturarMudancaCategoria}: Props) => {
                 <MaterialCommunityIcons 
                   name={item.iconName as any} 
                   size={20} 
-                  color={activeIndex === index ? Colors.white : Colors.black}/>
+                  color={activeIndex === index ? Colors.Branco : Colors.Preto}/>
                 <Text style={ activeIndex === index ? styles.textoAtivo : styles.texto}>
                     {item.titulo}
                 </Text>
@@ -64,13 +64,13 @@ const styles = StyleSheet.create({
     titulo:{
       fontSize: 22,
       fontWeight: '700',
-      color: Colors.black,
+      color: Colors.Preto,
     },
     categoriabtn:{
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.Branco,
       width: 100,
       height: 40,
       borderRadius: 10,
@@ -94,11 +94,11 @@ const styles = StyleSheet.create({
     },
     texto:{
       marginLeft: 4,
-      color: Colors.black,
+      color: Colors.Preto,
 
     },
     textoAtivo:{
       marginLeft: 4,
-      color: Colors.white
+      color: Colors.Branco
     }
 })

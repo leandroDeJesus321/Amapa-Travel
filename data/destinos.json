@@ -1,13 +1,106 @@
 [
     {
-        "id": "1",
-        "name": "Precisa de título",
+        "id": 1,
+        "name": "Marco Zero",
         "image": "https://th.bing.com/th/id/R.cf72d6dca50286b4c8ffb9ebfa2b13a3?rik=dxTIX6fHyHMxFw&riu=http%3a%2f%2fs.glbimg.com%2fjo%2fg1%2ff%2foriginal%2f2017%2f02%2f03%2f230439_223083634369386_4021444_n.jpg&ehk=P61Em8IhJko3vCzazyPCnxAZvK0wz80ncBNwyR4nA%2fg%3d&risl=&pid=ImgRaw&r=0",
-        "descricao": "Descrição do título",
+        "descricao": "O Marco Zero do Equador é o ponto turístico mais famoso de Macapá, contando com um obelisco de 30 metros de altura. Em março e setembro, durante o Equinócio, o sol preenche a abertura circular no topo do obelisco, cuja sombra é projetada no chão. As celebrações do Equinócio no monumento acontecem com atrações como apresentações, oficinas e feiras. Também fez parte das atrações do Equinócio demonstrações de salvamentos nas alturas com o Corpo de Bombeiros Militar do Amapá.",
+        "avalicao": "",
+        "preco": "",
+        "local": "https://www.bing.com/maps?osid=2f7fc26e-bfc6-485e-ac69-9fcb3725a2ce&cp=0.000118~-51.149555&lvl=13.07&pi=0&imgid=6e6cba29-25f8-4fec-a586-9f96241e49fe&v=2&sV=2&form=S00027",
+        "localidade": "7910 (Rodovia Juscelino Kubitschek), Macapá, AP",
+        "categoria": "Ponto Turistico",
+        "historia": [
+            {
+                "nome": "",
+                "url": ""
+            }
+            ]
+    },
+    {
+        "id": 2,
+        "name": "Fortaleza de São José de Macapá",
+        "image": "https://th.bing.com/th/id/R.14f46211e23b5927afc234f810bfc449?rik=HcMus6VwBvT%2bBw&riu=http%3a%2f%2fphotos.wikimapia.org%2fp%2f00%2f02%2f22%2f13%2f10_full.jpeg&ehk=kX40QJAFZSo2r1bPCkS3q0zIylh8keAq%2fROV2dplDJI%3d&risl=&pid=ImgRaw&r=0",
+        "descricao": "A Fortaleza de São José de Macapá foi construída entre 1764 e 1782 como uma estratégia eo-política contra a presença francesa na Amazônia. A construção foi realizada pelos escravos negros e índios durante a colonização portuguesa",
+        "avalicao": 4.5,
+        "preco": "",
+        "local": "https://www.bing.com/search?q=Fortaleza+de+S%C3%A3o+Jos%C3%A9+macapa&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=fortaleza+de+s%C3%A3o+jos%C3%A9+maca&sc=9-26&sk=&cvid=686A1308CA264979BD4F6223D20BA5D2&ghsh=0&ghacc=0&ghpl=",
+        "localidade": "Rua Cândido Mendes, Macapá, AP, 68905-670",
+        "categoria": "Ponto Turistico e Histórico",
+        "historia": [
+            {
+                "nome": "Meu Amapá na história",
+                "url": "https://meuamapanahistoria.blogspot.com/2013/12/fortaleza-de-sao-jose-de-macapa-marco.html"
+            },
+            {
+                "nome": "A fortaleza de São José de Macapá: Nos rastros das memórias das prisões e torturas (1964 - 1973)",
+                "url": "https://www.researchgate.net/publication/351340249_A_Fortaleza_de_Sao_Jose_de_Macapa_nos_rastros_das_memorias_das_prisoes_e_torturas_1964-1973"
+            }
+            ]
+    },
+    {
+        "id": 3,
+        "name": "Reserva Particular do Patrimônio Natural (RPPN) Revecom",
+        "image":"https://amapaecocamping.com.br/wp-content/uploads/2020/07/RPPN-Revecom-unidade-de-conserva%C3%A7%C3%A3o-2048x683.jpg",
+        "descricao": "A natureza se revela na Reserva Particular do Patrimônio Natural (RPPN) Revecom, localizada no município de Santana. O espaço contempla 17 hectares de mata amazônica e grande variedade de espécies nativas da fauna e da flora.",
         "avalicao": 4.8,
-        "preco": "150",
-        "local": "Escrever o local onde está o destino.",
-        "Categoria": "Escrever uma categoria"
+        "preco": "",
+        "local": "https://www.bing.com/maps?osid=985777c3-ecda-447b-845b-2e692c327f8e&cp=-0.057238~-51.157322&lvl=17&pi=0&imgid=7bda85fc-d42c-4058-9e65-62c0c89c5d94&v=2&sV=2&form=S00027",
+        "localidade": "Rua D 28, 421, Santana, AP, 68926-106",
+        "categoria" : "Reserva Particular do Patrimônio Natural",
+        "historia": [
+            {
+                "nome": "Amapa Eco Camping",
+                "url": "https://amapaecocamping.com.br/rppn-revecom/"
+            },
+            {
+                "nome" : "Revecom - site",
+                "url" : "https://www.revecombr.com.br/"
+            }
+            ]
+
+    },
+    {
+        "id": 4,
+        "name": "Oiapoque",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/50/Oiapoque2.jpg",
+        "descricao": "Município mais ao norte do Brasil, Oiapoque atrai turistas que desejam conhecer um pouco mais sobre a pequena cidade de 26 mil habitantes. O Monumento à Pátria, construído na década de 40, traz trechos do Hino Nacional e uma placa que afirma: “Aqui começa o Brasil”.",
+        "avalicao": "",
+        "preco": "",
+        "local": "https://www.bing.com/maps?q=Oiapoque&FORM=HDRSC6&cp=3.225789%7E-52.216124&lvl=8.9",
+        "localidade": "Rua Norberto Pennafort 540, Oiapoque, AP, 68980-000",
+        "categoria" : "Municipio do Amapá",
+        "historia": [
+            {
+                "nome": "Site Oficial de Oiapoque",
+                "url": "http://www.oiapoque.ap.gov.br/"
+            },
+            {
+                "nome": "Tripadvisor - Oiapoque pontos turisticos",
+                "url": "https://www.tripadvisor.com.br/Attractions-g2355246-Activities-Oiapoque_State_of_Amapa.html"
+            }
+            ]
+
+    },
+    {
+        "id": 5,
+        "name": "Museu do Sacaca",
+        "image":"https://www.guiaviajarmelhor.com.br/wp-content/uploads/2016/05/Macapa_museu_sacaca_foto_embraturNO_Amapa0067002-1-1024x683.jpg",
+        "descricao": "O Museu do Sacaca está localizado em Macapá e foi batizado em homenagem a Raimundo dos Santos Souza (Sacaca), curandeiro famoso no estado por usar plantas da Amazônia em seus processos de cura.",
+        "avalicao": 4.5 ,
+        "preco": "",
+        "local": "https://www.bing.com/maps?osid=d4acddea-39d0-44de-82a1-f53479917981&cp=0.029054~-51.078894&lvl=16&pi=0&imgid=b588bb3b-12d7-4720-ae07-90e2cfb3697d&v=2&sV=2&form=S00027",
+        "localidade": "Avenida Feliciano Coelho, 1.509, 68901-025",
+        "categoria" : "Preservação cultura indígena, povos tradicionais e pesquisa científicas",
+        "historia": [
+            {
+                "nome": "Site oficial do Museu Sacaca",
+                "url": "http://www.museusacaca.ap.gov.br/"
+            },
+            {
+
+            }
+            ]
+
     }
     
 ]
