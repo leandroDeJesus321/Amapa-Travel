@@ -26,6 +26,8 @@ const Listas = ({listings, category}: Props) => {
 
   }, [category])
 
+
+  // Função secundaria que recebe a lista e cria os cards dos pontos turisticos
   const carregarItens: ListRenderItem<listaTipos> = ({item}) =>{
     
     return (
@@ -58,6 +60,7 @@ const Listas = ({listings, category}: Props) => {
   // Console log para verificar se os dados estão sendo entregues
   // console.log(listings)
   
+  // Flatlista principal
   return (
     <View>
       <FlatList

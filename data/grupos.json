@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "municipio": "Macapá",
+        "image": "https://i.pinimg.com/originals/1a/41/2c/1a412c0940becb2ac0fdb3749a5f35cf.jpg",
+        "listaDestinos" : [1,2,5]
+    },
+    {
+        "id": 2,
+        "municipio": "Santana",
+        "image": "https://www.passeios.org/wp-content/uploads/2020/07/porto-768x510.jpg",
+        "listaDestinos" : [3]
+    },
+    {
+        "id": 3,
+        "municipio": "Oiapoque",
+        "image": "https://th.bing.com/th/id/OIP.73_a_mPRNq5ll1XDUaYHjwHaE-?rs=1&pid=ImgDetMain",
+        "listaDestinos" : [4]
+    }
+]

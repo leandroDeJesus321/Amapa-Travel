@@ -8,11 +8,13 @@ type Props ={
   capturarMudancaCategoria: (categoria: string) => void;
 }
 
+
 const BotaoCategoria = ({capturarMudancaCategoria}: Props) => {
   const scrollRef = useRef<ScrollView>(null);
   const itemRef = useRef<TouchableOpacity[] | null[]>([]);
   const [activeIndex, setActiveIndex] = useState(0);
 
+  // Função auxiliar para enviar número da categória
   const selecionarCategoria = (index: number)=>{
     const selected = itemRef.current[index]
     // console.log('Número da categória:', index);
@@ -26,6 +28,7 @@ const BotaoCategoria = ({capturarMudancaCategoria}: Props) => {
 
   }
 
+  // Corpo principal do botão categoria, lista map com os itens
   return (
     <View>
       <Text style={styles.titulo}>Categorias</Text>

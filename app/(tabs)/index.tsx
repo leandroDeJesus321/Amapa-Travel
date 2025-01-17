@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TouchableOpacity, View, Image, TextInput } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View, Image, TextInput, ScrollView } from 'react-native';
 import React, { useState } from 'react';
 import { Stack } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
@@ -8,6 +8,7 @@ import BotaoCategoria from '@/components/BotaoCategoria';
 import Listas from '@/components/Listas';
 import destinos from "../../data/destinos.json"
 import ListaGrupos from '@/components/ListaGrupos';
+import grupos from '../../data/grupos.json'
 
 const index = () => {
   const alturaTela = useHeaderHeight();
@@ -20,43 +21,54 @@ const index = () => {
     setCategoria(categoria);
   }
 
+  // Corpo principal do HTML
   return (
     <>
+    {/* Cabeçalho da página incial */}
     <Stack.Screen options={{headerTransparent: true, headerTitle: "", headerLeft: ()=>{
       return <TouchableOpacity onPress={() => { } } style={{marginLeft: 20}}>
-        {/* Imagem de tela do usuário */}
+        {/* Imagem de tela da bandeira do Amapá à esquerda*/}
         <Image source={{
           uri: 'https://th.bing.com/th/id/OIP.P8iFoKX9JoMyTDV8Q0n5OgEqDR?rs=1&pid=ImgDetMain'}}
           style={{width:50, height: 35, borderRadius: 5}} />
         </TouchableOpacity>
       },
-      // Notificações
+      // Icone de notificações
       headerRight: ()=>{
         return <TouchableOpacity onPress={() => { } } style={styles.notificacao}>
           <Ionicons name='notifications' size={20} color={Colors.Preto} />
         </TouchableOpacity>
       }
     }}/>
+
+    {/* Corpo abaixo da barra de notificação do página inicial */}
     <View style={[styles.container, {paddingTop: alturaTela}]}>
-      <Text style={styles.texto}>
-        Explore as belezas do Amapá
-      </Text>
-      {/* Barra de pesquisa */}
-      <View style={styles.containerPesquisa}>
-        <View style={styles.barraPesquisa}>
-          <Ionicons name='search' size={18}/>
-          <TextInput placeholder='Pesquisar...' style={{height: '100%', width: '100%'}}/>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <Text style={styles.texto}>
+          Explore as belezas do Amapá
+        </Text>
+
+        {/* Inicio - Barra de pesquisa */}
+        <View style={styles.containerPesquisa}>
+          <View style={styles.barraPesquisa}>
+            <Ionicons name='search' size={18}/>
+            <TextInput placeholder='Pesquisar...' style={{height: '100%', width: '100%'}}/>
+          </View>
+          <TouchableOpacity onPress={()=>{}} style={styles.filtroBtn}>
+              <Ionicons name="options" size={28} color={Colors.Branco}/>
+          </TouchableOpacity>
         </View>
-        <TouchableOpacity onPress={()=>{}} style={styles.filtroBtn}>
-            <Ionicons name="options" size={28} color={Colors.Branco}/>
-        </TouchableOpacity>
-      </View>
+        {/* Fim - Barra de pesquisa */}
 
-      <BotaoCategoria capturarMudancaCategoria={capturarMudancaCategoria}/>
+        {/* Lista horizontal de botões de categoria */}
+        <BotaoCategoria capturarMudancaCategoria={capturarMudancaCategoria}/>
 
-      <Listas listings={destinos} category={categoria}/>
+        {/* Lista de cards de pontos turisticos */}
+        <Listas listings={destinos} category={categoria}/>
 
-      <ListaGrupos/>
+        {/* Listade grupos de categorias - usado para agrupar pontos turisticos por município */}
+        <ListaGrupos listings={grupos}/>
+      </ScrollView>
     </View>
   </>
   )
