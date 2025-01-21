@@ -21,7 +21,7 @@ const index = () => {
     setCategoria(categoria);
   }
 
-  // Corpo principal do HTML
+  // Corpo principal do HTML - Página Inicial
   return (
     <>
     {/* Cabeçalho da página incial */}

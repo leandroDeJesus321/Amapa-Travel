@@ -4,7 +4,7 @@ export interface listaTipos {
     "image": string;
     "descricao": string;
     "avalicao": string;
-    "preco": string;
+    "avaliador": string;
     "local": string;
     "localidade": string;
     "categoria": string;
